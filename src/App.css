@@ -74,9 +74,11 @@
 @media only screen and (max-width: 750px){
     .left{
         width: 0;
+        display: none;
     }
     .right{
         width: 0;
+       display: none;
     }
     .middle{
         width: 100vw;
