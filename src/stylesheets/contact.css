@@ -1,0 +1,46 @@
+.contact{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact > div{
+    height: 55vh;
+    width: 50vw;
+    font-family: var(--font-sans);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center ;
+    text-align: center;
+}
+
+.contact > div > .p1{
+    color: var(--green);
+}
+
+.contact > div >h1{
+    font-size: clamp(40px, 5vw, 60px);
+    color: var(--lightestSlate);
+}
+.p2{
+    width: 80%;
+    font-family: var(--font-sans);
+    color: var(--lightSlate);
+    line-height: 1.5rem;
+    word-spacing: 5px;
+}
+.footer{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer > p{
+    font-size:14px;
+    color: var(--lightestSlate);
+    -webkit-font-smoothing: antialiased;
+}

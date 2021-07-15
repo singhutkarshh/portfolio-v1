@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+.App{
+    display: block;
+}
+.content{
+    display: flex;
+}
+.left{
+    width: 20vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top:1rem;
+}
+.right{
+    width: 20vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top:1rem;
+}
+.middle{
+    width: 60vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mail{
+    margin-bottom: 2rem;
+  height: 50%;
+  width: 4rem;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--lightSlate);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mail > p {
+    transform: rotate(-90deg);
+    color: var(--lightestSlate);
+   
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mail > p >a{
+    text-decoration: none;
+    font-family: var(--font-mono);
+    color: var(--lightSlate)
+}
+.mail > p > a:hover{
+    color: var(--green);
+}
+ 
+.socialLinks{
+ margin-bottom: 5rem;
+  height: 45%;
+  width: 4rem;
+  position: fixed;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--lightSlate);
+}
+.socialLinks > a >i{
+    font-size: 22px;
+    color: var(--lightSlate);
+}
+.socialLinks > a >i:hover{
+    color: var(--green);
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media only screen and (max-width: 750px){
+    .left{
+        width: 0;
+    }
+    .right{
+        width: 0;
+    }
+    .middle{
+        width: 100vw;
+    }
 }
