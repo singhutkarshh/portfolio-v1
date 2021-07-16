@@ -45,8 +45,22 @@
     -webkit-font-smoothing: antialiased;
 }
 
+.mobileOnly{
+    height: 4rem;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    display: none;
+}
+.mobileOnly > a{
+    font-size: 30px;
+}
+
 @media only screen and (max-width: 750px){
     .contact > div{
         width: 100%;
+    }
+    .mobileOnly{
+        display: flex;
     }
 }

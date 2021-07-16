@@ -76,6 +76,7 @@
 .aboutInfo>h1{
     color: var(--green);
     font-family: var(--font-mono);
+    margin-top: 8rem;
 }
 
 .aboutInfo>h1>span{
@@ -121,6 +122,21 @@
 }
 
 @media only screen and (max-width: 800px){
+    .intro{
+        margin-top:10vh;
+        height: 80vh;
+    }
+    .introName{
+        margin-bottom: 1rem;
+    }
+    .introName2{
+        margin-bottom: 2rem;
+    }
+    .introAbout2{
+        margin-top: 1rem;
+        width: 100%;
+    }
+
     .about{
         padding: 0 20px;
         position: relative;

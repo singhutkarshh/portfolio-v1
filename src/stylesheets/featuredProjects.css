@@ -11,6 +11,7 @@
 .fproj > h1 {
     color: var(--green);
     font-family: var(--font-mono);
+    margin-top: 3rem;
 }
 .fproj > h1 >span{
     color: var(--lightestSlate);

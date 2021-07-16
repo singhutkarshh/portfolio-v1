@@ -45,8 +45,9 @@
 .mail > p >a{
     text-decoration: none;
     font-family: var(--font-mono);
-    color: var(--lightSlate)
+    color: var(--lightSlate);
 }
+
 .mail > p > a:hover{
     color: var(--green);
 }
@@ -66,8 +67,11 @@
     font-size: 22px;
     color: var(--lightSlate);
 }
-.socialLinks > a >i:hover{
+.socialLinks > a :hover{
     color: var(--green);
+    outline: 2px solid var(--green);
+    outline-offset: 15px;
+    outline-style: dotted;
 }
 
 

@@ -14,22 +14,26 @@
     height: 71%;
     text-align: center;
     border:2px solid var(--green);
-    transform: rotate(60deg);
+    transform: rotate(50deg);
     position:relative;
+    border-radius: 10px;
     
 }
-
-
 
 .logo > h1{
     font-size: 30px;
     width: 30px;
-    transform: rotate(-60deg);
+    transform: rotate(-50deg);
    position: absolute;
    top:5px;
    left:10px;
    border-radius: 10px;
 }
+
+.logo > h1 >a{
+ text-decoration: none;
+}
+
 .options{
     width:45vw;
     display: flex;
@@ -49,6 +53,7 @@
     color:var(--lightestSlate);
     height: 100%;
 }
+
 .options >li>a:hover{
     color: var(--green);
 }

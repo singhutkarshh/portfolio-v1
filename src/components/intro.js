@@ -13,7 +13,7 @@ const Intro = () => {
                 and react native development. I also contibute in different
                 opensource projects.
             </p>
-            <button className=".introBtn">Get In Touch</button>
+            <a href="mailto:singh.utkarshofficial@gmail.com" ><button className=".introBtn">Get In Touch</button></a>
             </div>
         </article>
     )
