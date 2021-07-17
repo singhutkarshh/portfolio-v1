@@ -83,14 +83,6 @@
     color: var(--lightestSlate);
 }
 
-
-.line{
- width: 200px;
- height: 3px;
- color: white;
-}
-
-
 .aboutInfo > p {
     font-size: 18px;
     -webkit-font-smoothing: antialiased;

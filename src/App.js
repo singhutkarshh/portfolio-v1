@@ -12,8 +12,34 @@ function App() {
   React.useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 3500);
   }, [])
+const faders = document.querySelectorAll(".fade-in");
+
+const appearOptions = {
+  threshold: 0,
+  rootMargin: "0px 0px -300px 0px",
+};
+
+const appearOnScroll = new IntersectionObserver(function (
+  entries,
+  appearOnScroll
+) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("appear");
+      appearOnScroll.unobserve(entry.target);
+    }
+  });
+},
+appearOptions);
+
+faders.forEach((fader) => {
+  appearOnScroll.observe(fader);
+});
+
   return (
     <div className="App">
       {loading ? <LoadingPage/> : (
@@ -23,6 +49,7 @@ function App() {
         <div className="left">
           <div className="mail">
            <p><a href="mailto:singh.utkarshofficial@gmail.com">singh.utkarshofficial@gmail.com</a></p>
+           <span></span>
           </div>
         </div>
         <div className="middle">
@@ -37,7 +64,9 @@ function App() {
           <a href="https://www.linkedin.com/in/singhutkarshh"><i class="fab fa-linkedin-in"></i></a>
           <a href="https://twitter.com/Utkarsh46678134?s=08"><i class="fab fa-twitter"></i></a>
           <a href="https://www.instagram.com/imutkarshh?r=nametag"><i class="fab fa-instagram"></i></a>
+          <span></span>
           </div>
+         
         </div>
       </div>
       </>)}

@@ -27,12 +27,13 @@
 }
 
 .mail{
-    margin-bottom: 2rem;
-  height: 50%;
+  margin-bottom: -5rem;
+  height: 90%;
   width: 4rem;
   position: fixed;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
   color: var(--lightSlate);
 }
@@ -40,38 +41,59 @@
 .mail > p {
     transform: rotate(-90deg);
     color: var(--lightestSlate);
-   
+    margin-bottom: 1rem;
+    
 }
+
+.mail > span{
+    margin-top:9rem;
+    height: 9rem;
+    width: 1px;
+    background-color: var(--lightestSlate);
+}
+
 .mail > p >a{
     text-decoration: none;
     font-family: var(--font-mono);
     color: var(--lightSlate);
+    font-size: 15px;
 }
 
 .mail > p > a:hover{
     color: var(--green);
+    font-size: 16px;
 }
  
 .socialLinks{
- margin-bottom: 5rem;
-  height: 45%;
+ margin-bottom: -3rem;
+  height: 100%;
   width: 4rem;
   position: fixed;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-items: center;
   color: var(--lightSlate);
+}
+
+.socialLinks > span {
+    height: 7rem;
+    width: 1px;
+    background-color: var(--lightestSlate);
+}
+.socialLinks > a{
+    margin-bottom: 3rem;
 }
 .socialLinks > a >i{
     font-size: 22px;
     color: var(--lightSlate);
 }
-.socialLinks > a :hover{
+.socialLinks > a  :hover{
     color: var(--green);
     outline: 2px solid var(--green);
     outline-offset: 15px;
     outline-style: dotted;
+    font-size: 23px;
 }
 
 

@@ -20,7 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: anime2 3s  1 linear ;
+    animation: anime2 3s 1s  1 linear ;
     border-radius: 10px;
 }
 
@@ -47,23 +47,20 @@
   font-size: 45px;
   border-radius: 20px;
   transform: rotate(-50deg);
-  animation: anime1 2s 1 ease-in;
+  color: var(--green);
+  animation: anime1 3s 1 ease-in;
   }
   @keyframes anime1{
-   0%{
-      color:white;
-      opacity: 0%;
-   }
-   50%{
-      color:white;
-      opacity: 0%;
-   }
-   50%{
-      color: var(--green);
-      opacity:0% ;
-   }
-   100%{
-      color: var(--green);
-      opacity:100% ;
-   }
+  0%{
+     opacity: 0;
+  }
+  50%{
+     opacity: 0;
+  }
+  75%{
+    opacity: 0;
+  }
+  100%{
+     opacity: 1;
+  }
   }

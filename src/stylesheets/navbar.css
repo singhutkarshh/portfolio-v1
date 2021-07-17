@@ -102,6 +102,9 @@
     .options{
         display: none;
     }
+    .logo{
+        width:50px;
+    }
     .resumeBtn{
         display: none;
     }

@@ -3,7 +3,7 @@ import "../stylesheets/style.css";
 
 const Intro = () => {
     return (
-        <article className="intro">
+        <article className="intro fade-in">
             <div className="introContainer">
             <p className="introName">Hi, my name is</p>
             <h1 className="introName2">Utkarsh Singh.</h1>
