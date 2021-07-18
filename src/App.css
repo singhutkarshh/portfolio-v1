@@ -80,6 +80,7 @@
     height: 7rem;
     width: 1px;
     background-color: var(--lightestSlate);
+    color:var(--lightestSlate);
 }
 .socialLinks > a{
     margin-bottom: 3rem;

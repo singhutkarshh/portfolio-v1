@@ -6,6 +6,7 @@ import FeaturedProjects from "./components/featuredProjects";
 import Intro from './components/intro';
 import LoadingPage from "./components/loadingPage";
 import Navbar from './components/navbar';
+import Techs from "./components/techs";
 
 function App() {
   const  [loading,setLoading] = React.useState(true);
@@ -14,31 +15,6 @@ function App() {
       setLoading(false);
     }, 3500);
   }, [])
-const faders = document.querySelectorAll(".fade-in");
-
-const appearOptions = {
-  threshold: 0,
-  rootMargin: "0px 0px -300px 0px",
-};
-
-const appearOnScroll = new IntersectionObserver(function (
-  entries,
-  appearOnScroll
-) {
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) {
-      return;
-    } else {
-      entry.target.classList.add("appear");
-      appearOnScroll.unobserve(entry.target);
-    }
-  });
-},
-appearOptions);
-
-faders.forEach((fader) => {
-  appearOnScroll.observe(fader);
-});
 
   return (
     <div className="App">
@@ -55,6 +31,7 @@ faders.forEach((fader) => {
         <div className="middle">
           <Intro/>
           <About/>
+          <Techs/>
           <FeaturedProjects/>
           <Contact/>
         </div>
