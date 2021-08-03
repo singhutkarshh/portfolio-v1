@@ -1,9 +1,16 @@
 import React from 'react'
 import "../stylesheets/contact.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
+
+    React.useEffect(() => {
+        Aos.init({duration:2000});
+    }, [])
+
     return (<>
-        <article className="contact fade-in" id="contact"> 
+        <article className="contact" id="contact" data-aos="flip-left"> 
         <div>
             <p className="p1">04. What's Next?</p>
             <h1>Get In Touch</h1>

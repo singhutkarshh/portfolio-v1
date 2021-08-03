@@ -1,10 +1,14 @@
 import React from 'react'
-
 import "../stylesheets/featuredProjects.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const FeaturedProjects = () => {
+    React.useEffect(() => {
+        Aos.init({duration:2000});
+    }, [])
     return (<>
-        <article className="fproj fade-in" id="work">
+        <article className="fproj fade-in" id="work" data-aos="fade-left">
              <h1>03. <span>  Some Things I've Built</span></h1>
             <div className="fprojcontainer">
                 <img className="fimg1" src="./static/github.png" alt="pimg"></img>
@@ -26,7 +30,7 @@ const FeaturedProjects = () => {
             </div>
         </article>
 
-        <article className="fproj3 fade-in">
+        <article className="fproj3 fade-in" data-aos="fade-right">
             <div className="fprojcontainer3">
                 <img className="fimg1" src="./static/event.png" alt="pimg"></img>
             </div>
@@ -46,7 +50,7 @@ const FeaturedProjects = () => {
             </div>
         </article>
 
-        <article className="fproj2 fade-in">
+        <article className="fproj2 fade-in" data-aos="fade-left">
             <div className="fprojcontainer2">
                 <img className="fimg1" src="./static/shopkart.png" alt="pimg"></img>
             </div>

@@ -1,32 +1,32 @@
-.App{
-    display: block;
+.App {
+  display: block;
 }
-.content{
-    display: flex;
+.content {
+  display: flex;
 }
-.left{
-    width: 20vw;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top:1rem;
+.left {
+  width: 20vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 1rem;
 }
-.right{
-    width: 20vw;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top:1rem;
+.right {
+  width: 20vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 1rem;
 }
-.middle{
-    width: 60vw;
+.middle {
+  width: 60vw;
 }
 
-.mail{
+.mail {
   margin-bottom: -5rem;
   height: 90%;
   width: 4rem;
@@ -39,33 +39,32 @@
 }
 
 .mail > p {
-    transform: rotate(-90deg);
-    color: var(--lightestSlate);
-    margin-bottom: 1rem;
-    
+  transform: rotate(-90deg);
+  color: var(--lightestSlate);
+  margin-bottom: 1rem;
 }
 
-.mail > span{
-    margin-top:9rem;
-    height: 9rem;
-    width: 1px;
-    background-color: var(--lightestSlate);
+.mail > span {
+  margin-top: 9rem;
+  height: 9rem;
+  width: 1px;
+  background-color: var(--lightestSlate);
 }
 
-.mail > p >a{
-    text-decoration: none;
-    font-family: var(--font-mono);
-    color: var(--lightSlate);
-    font-size: 15px;
+.mail > p > a {
+  text-decoration: none;
+  font-family: var(--font-mono);
+  color: var(--lightSlate);
+  font-size: 15px;
 }
 
-.mail > p > a:hover{
-    color: var(--green);
-    font-size: 16px;
+.mail > p > a:hover {
+  color: var(--green);
+  font-size: 16px;
 }
- 
-.socialLinks{
- margin-bottom: -3rem;
+
+.socialLinks {
+  margin-bottom: -3rem;
   height: 100%;
   width: 4rem;
   position: fixed;
@@ -77,37 +76,36 @@
 }
 
 .socialLinks > span {
-    height: 7rem;
-    width: 1px;
-    background-color: var(--lightestSlate);
-    color:var(--lightestSlate);
+  height: 7rem;
+  width: 1px;
+  background-color: var(--lightestSlate);
+  color: var(--lightestSlate);
 }
-.socialLinks > a{
-    margin-bottom: 3rem;
+.socialLinks > a {
+  margin-bottom: 3rem;
 }
-.socialLinks > a >i{
-    font-size: 22px;
-    color: var(--lightSlate);
+.socialLinks > a > i {
+  font-size: 22px;
+  color: var(--lightSlate);
 }
-.socialLinks > a  :hover{
-    color: var(--green);
-    outline: 2px solid var(--green);
-    outline-offset: 15px;
-    outline-style: dotted;
-    font-size: 23px;
+.socialLinks > a :hover {
+  color: var(--green);
+  outline: 2px solid var(--green);
+  outline-offset: 15px;
+  outline-style: dotted;
+  font-size: 23px;
 }
 
-
-@media only screen and (max-width: 750px){
-    .left{
-        width: 0;
-        display: none;
-    }
-    .right{
-        width: 0;
-       display: none;
-    }
-    .middle{
-        width: 100vw;
-    }
+@media only screen and (max-width: 750px) {
+  .left {
+    width: 0;
+    display: none;
+  }
+  .right {
+    width: 0;
+    display: none;
+  }
+  .middle {
+    width: 100vw;
+  }
 }

@@ -21,21 +21,21 @@ function App() {
       {loading ? <LoadingPage/> : (
         <>
       <Navbar/>
-      <div className="content">
+      <div className="content banner" >
         <div className="left">
           <div className="mail">
            <p><a href="mailto:singh.utkarshofficial@gmail.com">singh.utkarshofficial@gmail.com</a></p>
            <span></span>
           </div>
         </div>
-        <div className="middle">
+        <div className="middle banner">
           <Intro/>
           <About/>
           <Techs/>
           <FeaturedProjects/>
           <Contact/>
         </div>
-        <div className="right">
+        <div className="right banner">
           <div className="socialLinks">
           <a href="https://github.com/singhutkarshh/singhutkarshh"><i class="fab fa-github"></i></a>
           <a href="https://www.linkedin.com/in/singhutkarshh"><i class="fab fa-linkedin-in"></i></a>
